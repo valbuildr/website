@@ -1,0 +1,23 @@
+---
+import BaseHead from "../components/BaseHead.astro"
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<html lang="en">
+    <BaseHead title="Contact" />
+    <body class="dark:bg-neutral-900 dark:text-neutral-100 min-h-screen">
+        <Navbar />
+        <div class="py-1 px-3 items-center">
+			<h1 class="text-center text-3xl md:text-6xl font-bold py-2">📞 Contact</h1>
+		</div>
+        <hr class="border-neutral-200 dark:border-neutral-800" />
+        <h2 class="text-center text-xl md:text-3xl font-semibold py-2">I ignore my email, so here's some other ways of contacting me!</h2>
+        <ol class="flex flex-col py-3 items-center">
+            <li><a href="https://discord.gg/3urn8Wn5S8" class="hover:underline"><i class="fa-brands fa-discord"></i> Discord</a></li>
+            <li><a href="https://twitter.com/valonthenet" class="hover:underline" title="No, I'm not calling it that."><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://wetdry.world/@valbuildr" class="hover:underline"><i class="fa-brands fa-mastodon"></i> Mastodon (wetdry.world)</a></li>
+        </ol>
+        <Footer />
+    </body>
+</html>
