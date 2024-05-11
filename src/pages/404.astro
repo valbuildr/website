@@ -2,16 +2,15 @@
 import BaseHead from "../components/BaseHead.astro"
 import Navbar from "../components/Navbar.astro"
 import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
 ---
 
 <html lang="en">
 	<BaseHead title="Page not found" />
 	<body class="dark:bg-neutral-900 dark:text-neutral-100 min-h-screen">
 		<Navbar />
-        <div class="py-1 px-3 items-center">
-			<h1 class="text-center text-3xl md:text-6xl font-bold py-2">😖 404 Page not found.</h1>
-			<h3 class="text-center text-md md:text-xl py-2">This page seems to not exist. It's highly recommended to <a href="/" class="hover:underline">head back to safety.</a></h3>
-		</div>
+		<Header title="😖 404 Page not found." description="This page seems to not exist." />
+		<h3 class="text-center text-md md:text-xl py-2">It's highly recommended to <a href="/" class="hover:underline">head back to safety.</a></h3>
 		<Footer />
 	</body>
 </html>

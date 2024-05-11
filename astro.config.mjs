@@ -8,5 +8,8 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://valbuilds.gay',
   output: "server",
-  adapter: netlify()
+  adapter: netlify(),
+  redirects: {
+    '/teapot': '/418'
+  }
 });
